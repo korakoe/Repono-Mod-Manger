@@ -40,40 +40,34 @@ include $(DEVKITPRO)/libnx/switch_rules
 TARGET		:=	$(notdir $(CURDIR))
 BUILD		:=	build
 SOURCES		:=	source
+DATA		:=	data
 INCLUDES	:=	include
-
-VER_MAJOR	:= 0
-VER_MINOR	:= 0
-VER_MICRO	:= 1
-
-APP_TITLE   := Repono Mod Manager
-APP_AUTHOR  := ButterCream
-
-# "-dev" prefix is manually appended when a new version is under development
-APP_VERSION := $(VER_MAJOR).$(VER_MINOR).$(VER_MICRO)
+#ROMFS	:=	romfs
 
 #---------------------------------------------------------------------------------
 # options for code generation
 #---------------------------------------------------------------------------------
 ARCH	:=	-march=armv8-a+crc+crypto -mtune=cortex-a57 -mtp=soft -fPIE
 
-CFLAGS	:=	-g -O2 -ffunction-sections \
+CFLAGS	:=	-g -Wall -O2 -ffunction-sections \
 			$(ARCH) $(DEFINES)
 
-CFLAGS	+=	$(INCLUDE) -D__SWITCH__ `sdl2-config --cflags`
+CFLAGS	+=	$(INCLUDE) -D__SWITCH__
 
-CXXFLAGS	:= $(CFLAGS) -fno-rtti -fexceptions -std=gnu++17
+CXXFLAGS	:= $(CFLAGS) -fno-rtti -fno-exceptions
 
 ASFLAGS	:=	-g $(ARCH)
 LDFLAGS	=	-specs=$(DEVKITPRO)/libnx/switch.specs -g $(ARCH) -Wl,-Map,$(notdir $*.map)
 
-LIBS	:= -lcurl -lz -lmbedtls -lmbedcrypto -lmbedx509 -lnx -lusbhsfs -lntfs-3g -llwext4 -lpu -lfreetype -lSDL2_mixer -lopusfile -lopus -lmodplug -lmpg123 -lvorbisidec -lc -logg -lSDL2_ttf -lSDL2_gfx -lSDL2_image -lwebp -lpng -ljpeg `sdl2-config --libs` `freetype-config --libs`
+LIBS	:= -lpu -lfreetype -lSDL2_mixer -lopusfile -lopus -lmodplug -lmpg123 -lvorbisidec -logg -lSDL2_ttf -lSDL2_gfx -lSDL2_image -lSDL2 -lEGL -lGLESv2 -lglapi -ldrm_nouveau -lwebp -lpng -ljpeg `sdl2-config --libs` `freetype-config --libs` -lnx
 
 #---------------------------------------------------------------------------------
 # list of directories containing libraries, this must be the top level containing
 # include and lib
 #---------------------------------------------------------------------------------
-LIBDIRS	:= $(PORTLIBS) $(LIBNX) $(CURDIR)/Plutonium/ $(CURDIR)/../libusbhsfs
+
+# IMPORTANT! Change "$(CURDIR)/../Plutonium" to the path in which you have Plutonium
+LIBDIRS	:= $(PORTLIBS) $(LIBNX) $(CURDIR)/Plutonium
 
 
 #---------------------------------------------------------------------------------
