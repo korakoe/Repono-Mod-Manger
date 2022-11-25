@@ -1,0 +1,3 @@
+[submodule "borealis"]
+	path = libs/borealis
+	url = https://github.com/xfangfang/borealis.git
