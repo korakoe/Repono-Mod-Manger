@@ -42,11 +42,11 @@ BUILD		:=	build
 SOURCES		:=	source
 DATA		:=	data
 ICON		:=	resources/img/demo_icon.jpg
-INCLUDES	:=	inc
+INCLUDES	:=	source include
 
 APP_TITLE	:=	Repono Mod Manager
 APP_AUTHOR	:=	Buttercream
-APP_VERSION	:=	0.0.1
+APP_VERSION	:=	1.0.0
 
 ROMFS				:=	resources
 BOREALIS_PATH		:=	libs/borealis/
