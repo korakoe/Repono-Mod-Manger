@@ -2,3 +2,4 @@
 install-devkitpro-pacman
 /build
 /source/build/
+/.vscode/
