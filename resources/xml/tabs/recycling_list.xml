@@ -2,14 +2,10 @@
     width="auto"
     height="auto">
 
-    <brls:RecyclerFrame
-        id="recycler"
+    <brls:Rectangle
         width="auto"
         height="auto"
         grow="1.0"
-        paddingTop="@style/brls/sidebar/padding_top"
-        paddingRight="@style/brls/sidebar/padding_right"
-        paddingBottom="@style/brls/sidebar/padding_bottom"
-        paddingLeft="@style/brls/sidebar/padding_left"/>
+        color="#0000FF" />
 
 </brls:Box>

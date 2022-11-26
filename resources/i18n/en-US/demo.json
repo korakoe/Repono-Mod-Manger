@@ -3,10 +3,8 @@
 
     "tabs": {
         "components": "Basic components",
-        "scroll": "Scroll test",
         "layout": "Layout and alignment",
-        "pokedex": "Pokedex",
-        "settings": "Settings",
+        "recycling": "Recycling lists",
         "popups": "Popups, notifications and dialogs",
         "hos_layout": "Horizon layouts",
         "misc_layouts": "Misc. layouts",
@@ -25,9 +23,8 @@
         "button_bordered": "Bordered button",
         "button_borderless": "Borderless button",
 
-        "slider_header": "Slider",
         "labels_header": "Labels",
-        "regular_label": "This is a label. By default, they will automatically wrap and expand their height, should the remaining vertical space allow it. Otherwise, they will be truncated, like some of the tabs of the sidebar.\nThis is a label. By default, they will automatically wrap and expand their height, should the remaining vertical space allow it. Otherwise, they will be truncated, like some of the tabs of the sidebar.",
+        "regular_label": "This is a label. By default, they will automatically wrap and expand their height, should the remaining vertical space allow it. Otherwise, they will be truncated, like some of the tabs of the sidebar.",
         "label_left": "This label is left-aligned",
         "label_center": "This label is center-aligned",
         "label_right": "This label is right-aligned",

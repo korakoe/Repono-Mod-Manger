@@ -22,99 +22,6 @@
                     text="@i18n/demo/welcome"
                     marginBottom="10px" />
 
-                <!-- HScroll -->
-                <brls:Header
-                    width="auto"
-                    height="auto"
-                    title="HScroll"
-                    marginBottom="30px" />
-
-                <brls:HScrollingFrame
-                    width="auto"
-                    height="240"
-                    grow="1.0">
-
-                    <brls:Box
-                        width="auto"
-                        height="auto"
-                        axis="row">
-                        <CaptionedImage
-                            width="auto"
-                            height="auto"
-                            imageWidth="auto"
-                            imageHeight="auto"
-                            image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
-                            paddingRight="6" />
-                        <CaptionedImage
-                            width="auto"
-                            height="auto"
-                            imageWidth="auto"
-                            imageHeight="auto"
-                            image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
-                            paddingRight="6" />
-                        <CaptionedImage
-                            width="auto"
-                            height="auto"
-                            imageWidth="auto"
-                            imageHeight="auto"
-                            image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
-                            paddingRight="6" />
-                        <CaptionedImage
-                            width="auto"
-                            height="auto"
-                            imageWidth="auto"
-                            imageHeight="auto"
-                            image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
-                            paddingRight="6" />
-                        <CaptionedImage
-                            width="auto"
-                            height="auto"
-                            imageWidth="auto"
-                            imageHeight="auto"
-                            image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
-                            paddingRight="6" />
-                        <CaptionedImage
-                            width="auto"
-                            height="auto"
-                            imageWidth="auto"
-                            imageHeight="auto"
-                            image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
-                            paddingRight="6" />
-                        <CaptionedImage
-                            width="auto"
-                            height="auto"
-                            imageWidth="auto"
-                            imageHeight="auto"
-                            image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
-                            paddingRight="6" />
-                        <CaptionedImage
-                            width="auto"
-                            height="auto"
-                            imageWidth="auto"
-                            imageHeight="auto"
-                            image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
-                            paddingRight="6" />
-                        <CaptionedImage
-                            width="auto"
-                            height="auto"
-                            imageWidth="auto"
-                            imageHeight="auto"
-                            image="@res/img/tiles.png"
-                            caption="@i18n/demo/components/images_original"
-                            paddingRight="6" />
-
-                    </brls:Box>
-
-                </brls:HScrollingFrame>
-
                 <!-- Buttons -->
                 <brls:Header
                     width="auto"
@@ -185,35 +92,6 @@
 
                     </brls:Box>
 
-                </brls:Box>
-                
-                <!-- Scroll -->
-                <brls:Header
-                    width="auto"
-                    height="auto"
-                    title="@i18n/demo/components/slider_header"
-                    marginBottom="15px" />
-                
-                <brls:Box
-                    width="auto"
-                    height="auto"
-                    axis="row">
-                    
-                    <brls:Label
-                        id="progress"
-                        width="80"
-                        height="40"
-                        text="100"
-                        marginBottom="10px"
-                        horizontalAlign="center"
-                        verticalAlign="center" />
-                        
-                    <brls:Slider
-                        id="slider"
-                        width="auto"
-                        height="40"
-                        grow="1"/>
-                    
                 </brls:Box>
 
                 <!-- Labels -->
@@ -325,7 +203,7 @@
                         imageWidth="auto"
                         imageHeight="75px"
                         image="@res/img/tiles.png"
-                        scalingType="center"
+                        scalingType="crop"
                         caption="@i18n/demo/components/images_cropped"
                         focusUp="image_upscaled" />
 
