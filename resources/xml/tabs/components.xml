@@ -143,35 +143,6 @@
                     marginBottom="30px" />
 
 
-                <brls:Box
-                    width="auto"
-                    height="auto"
-                    axis="row"
-                    alignItems="center"
-                    justifyContent="spaceEvenly">
-
-                    <CaptionedImage
-                        width="auto"
-                        height="auto"
-                        imageWidth="400px"
-                        imageHeight="75px"
-                        image="@res/img/tiles.png"
-                        scalingType="stretch"
-                        caption="@i18n/demo/components/images_stretched" />
-
-                    <CaptionedImage
-                        id="image_cropped"
-                        width="auto"
-                        height="auto"
-                        imageWidth="auto"
-                        imageHeight="75px"
-                        image="@res/img/tiles.png"
-                        scalingType="crop"
-                        caption="@i18n/demo/components/images_cropped"
-                        focusUp="image_upscaled" />
-
-                </brls:Box>
-
         </brls:Box>
 
     </brls:ScrollingFrame>
