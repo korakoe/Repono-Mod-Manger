@@ -26,10 +26,8 @@
 #include <borealis.hpp>
 #include <string>
 
-#include "captioned_image.hpp"
 #include "components_tab.hpp"
 #include "main_activity.hpp"
-#include "recycling_list_tab.hpp"
 
 using namespace brls::literals; // for _i18n
 
@@ -56,9 +54,6 @@ int main(int argc, char* argv[])
     // Have the application register an action on every activity that will quit when you press BUTTON_START
     brls::Application::setGlobalQuit(true);
 
-    // Register custom views (including tabs, which are views)
-    brls::Application::registerXMLView("CaptionedImage", CaptionedImage::create);
-    brls::Application::registerXMLView("RecyclingListTab", RecyclingListTab::create);
     brls::Application::registerXMLView("ComponentsTab", ComponentsTab::create);
 
     // Add custom values to the theme

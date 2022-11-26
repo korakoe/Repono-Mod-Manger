@@ -142,43 +142,6 @@
                     subtitle="@i18n/demo/components/images_header_subtitle"
                     marginBottom="30px" />
 
-                <brls:Box
-                    width="auto"
-                    height="auto"
-                    axis="row"
-                    alignItems="center"
-                    justifyContent="spaceEvenly"
-                    marginBottom="30px">
-
-                    <CaptionedImage
-                        width="auto"
-                        height="auto"
-                        imageWidth="76px"
-                        imageHeight="76px"
-                        image="@res/img/tiles.png"
-                        caption="@i18n/demo/components/images_downscaled" />
-
-                    <CaptionedImage
-                        id="image_original"
-                        width="auto"
-                        height="auto"
-                        imageWidth="auto"
-                        imageHeight="auto"
-                        image="@res/img/tiles.png"
-                        caption="@i18n/demo/components/images_original" />
-
-                    <CaptionedImage
-                        id="image_upscaled"
-                        width="auto"
-                        height="auto"
-                        imageWidth="170px"
-                        imageHeight="170px"
-                        maxWidth="170px"
-                        image="@res/img/tiles.png"
-                        caption="@i18n/demo/components/images_upscaled"
-                        focusDown="image_cropped" />
-
-                </brls:Box>
 
                 <brls:Box
                     width="auto"
